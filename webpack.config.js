@@ -28,6 +28,9 @@ module.exports = {
       js: 'babel'
     }
   },
+  babel: {
+    presets: ['es2015']
+  },
   devServer: {
     inline: true,
     hot: true

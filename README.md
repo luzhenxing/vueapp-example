@@ -15,3 +15,14 @@ npm install
 npm run build
 ## 启用dev服务
 npm run dev
+
+## 注意
+vue2区分**独立构建**、**运行时构建**，在webpack配置需要在resolve中增加([官方链接](https://vuefe.cn/v2/guide/installation.html#独立构建-vs-运行时构建))：
+
+```javascript
+resolve: {
+  alias: {
+    'vue$': '../node_modules/vue/dist/vue.common.js'
+  }
+}
+```
